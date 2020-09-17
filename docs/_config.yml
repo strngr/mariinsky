@@ -29,6 +29,8 @@ url: "https://mariinsky.org.ua" # the base hostname & protocol for your site, e.
 google_analytics: UA-170482909-3
 lang: ru
 rss: false
+viber:
+  last_messages_endpoint: https://api.mariinsky.org.ua/viber/
 
 # Build settings
 theme: minima
