@@ -31,6 +31,11 @@ lang: ru
 rss: false
 viber:
   last_messages_endpoint: https://api.mariinsky.org.ua/viber/
+header_pages:
+  - docs.markdown
+  - viber.markdown
+  - ipcam.markdown
+  - about.markdown
 
 # Build settings
 theme: minima

@@ -1,0 +1,43 @@
+<script>
+fetch('{{ site.viber.last_messages_endpoint }}')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(records) {
+    let viberCt = document.querySelector('.viber.last_messages');
+
+    records.map(function (record) {
+      let el = document.createElement('div'),
+          date = new Date(record.TimeStamp);
+
+      el.innerHTML += '<span class="name">' + record.ClientName + '</span><br />';
+      el.innerHTML += '<span class="datetime">' + date.toLocaleString() + '</span><br />';
+      el.innerHTML += '<span class="message">' + record.Body + '</span>';
+
+      viberCt.appendChild(el);
+    });
+  });
+</script>
+
+<style>
+    .viber .datetime {
+        font-size: 75%;
+        font-style: italic;
+        color: #555;
+        position: relative;
+        top: -5px;
+    }
+    .viber .name {
+        font-weight: bold;
+    }
+    .viber {
+        padding: 10px 0;
+    }
+    .viber > div {
+        padding: 10px;
+        background-color: #eee;
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class='viber last_messages'></div>
