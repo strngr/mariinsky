@@ -6,4 +6,4 @@ layout: home
 list_title: Всякие объявления
 ---
 
-<img src="{{ 'photo.jpeg' | relative_url }}" />
+<img src="{{ 'img/photo.jpeg' | relative_url }}" />
