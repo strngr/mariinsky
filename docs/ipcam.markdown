@@ -19,7 +19,7 @@ permalink: /ipcam/
 <video muted id="building" data-src="https://cdn1.live-tv.od.ua:8083/mariin/mariin/playlist.m3u8" poster="{{ 'img/static.gif' | relative_url }}"></video>
 
 <h4>Перекресток</h4>
-<video muted id="video1" data-src="https://frn.rtsp.me/8nv2RQBhaE2DdY-VE5HJyA/1611330503/hls/qWesKHiX.m3u8" poster="{{ 'img/static.gif' | relative_url }}"></video>
+<video muted id="video1" data-src="https://frn.rtsp.me/sFL1DAhEfLvNuDiJkdbFKg/1611618426/hls/qWesKHiX.m3u8" poster="{{ 'img/static.gif' | relative_url }}"></video>
 
 <script>
 function doIt(video) {
